@@ -1,0 +1,18 @@
+<p data-sly-test=${wcmmode.edit}>Configure Image Tiles Container</p>
+<div class="columns-info" ng-show="ShowCarousel">
+    <div class="holder">
+        <div class="frame">
+            <div class="columns-box">
+                <div sonar="" class="column" zone="HP2" location="HP" ng-show="ShowHP2">
+                    <sly data-sly-resource="${@path='imagetile1', resourceType='us-bank/components/content/imagetiles'}" />
+                </div>
+                <div sonar="" class="column" zone="HP3" location="HP" ng-show="ShowHP3">
+                    <sly data-sly-resource="${@path='imagetile2', resourceType='us-bank/components/content/imagetiles'}" />
+                </div>
+                <div sonar="" class="column" zone="HP4" location="HP" ng-show="ShowHP4">
+                    <sly data-sly-resource="${@path='imagetile3', resourceType='us-bank/components/content/imagetiles'}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
