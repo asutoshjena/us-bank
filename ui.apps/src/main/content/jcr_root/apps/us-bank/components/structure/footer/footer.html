@@ -1,0 +1,15 @@
+<p data-sly-test=${wcmmode.edit}>Configure Footer</p>
+
+<div id="footer">
+    <div class="footer-holder" data-sly-use.footerModel="com.usbank.cms.core.models.FooterModel" data-sly-test="${footerModel}">
+        <ul class="footer-nav" data-sly-list.footerlist="${footerModel.footerList}">
+            <li><a href="${footerlist.linkUrl}" target="${footerlist.linkNewWindow}">${footerlist.linkName}</a></li>
+        </ul>
+        <p class="theme-custom" data-sly-test.copyrightText="${properties.copyrightText}">
+            ${copyrightText @context='html'}
+        </p>
+        <div class="intro" style="padding: 5px 0 0 0px;" data-sly-test.footerNote="${properties.footerNote}">
+            <p style="margin-top:20px; margin-bottom:15px;">${footerNote @context='html'}</p>
+        </div>
+    </div>
+</div>
