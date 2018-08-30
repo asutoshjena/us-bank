@@ -109,7 +109,7 @@
                         <Bundle-SymbolicName>com.usbank.cms.us-bank</Bundle-SymbolicName>
 
                         <Sling-Model-Packages>
-                          com.usbank.cms.core
+                            com.usbank.cms.core.models
                         </Sling-Model-Packages>
 
                     </instructions>

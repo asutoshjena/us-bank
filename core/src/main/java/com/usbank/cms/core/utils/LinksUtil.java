@@ -119,23 +119,17 @@ public class LinksUtil {
     }
 
     /**
-     * Gets the window target.
+     * Checks if is new window.
      *
      * @param newWindow the new window
-     * @return the window target
+     * @return the string
      */
-    public static String getWindowTarget(boolean newWindow) {
-        return newWindow ? GlobalConstants.TARGET_BLANK : GlobalConstants.TARGET_SELF;
-    }
-
-    /**
-     * Gets the window target.
-     *
-     * @param newWindow the new window
-     * @return the window target
-     */
-    public static String getWindowTarget(String newWindow) {
-        boolean isNewWindow = Boolean.parseBoolean(newWindow);
-        return getWindowTarget(isNewWindow);
+    public static String isNewWindow(String newWindow) {
+        LOG.debug("In isNewWindow method of LinksUtil component.");
+        if (StringUtils.isNotBlank(newWindow) && newWindow.equalsIgnoreCase(GlobalConstants.TRUE)) {
+            return GlobalConstants.TARGET_BLANK;
+        } else {
+            return GlobalConstants.TARGET_SELF;
+        }
     }
 }

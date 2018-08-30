@@ -19,4 +19,7 @@
              data-sly-repeat.child="${templatedContainer.structureResources}"
              data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
     </div>
+    <div id="footer">
+        <sly data-sly-resource="${@path='footer', resourceType='us-bank/components/structure/footer'}"/>
+    </div>
 </div>

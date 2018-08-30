@@ -28,8 +28,8 @@
                                         fieldDescription="Configure Logo"
                                         fieldLabel="Logo"
                                         name="./logoImage"
-                                        rootPath="/content/dam"
-                                        required="{Boolean}true"/>
+                                        required="{Boolean}true"
+                                        rootPath="/content/dam"/>
                                     <logoalttext
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
