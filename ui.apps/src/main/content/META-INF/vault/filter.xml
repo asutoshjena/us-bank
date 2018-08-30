@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/us-bank"/>
+
+    <filter root="/apps/sling/servlet/errorhandler"/>
+
+
+    <filter root="/conf/us-bank" mode="merge"/>
+
+
+    <filter root="/etc/clientlibs/us-bank"/>
+
+
+</workspaceFilter>

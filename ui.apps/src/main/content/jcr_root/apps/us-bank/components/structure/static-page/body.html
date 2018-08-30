@@ -1,0 +1,31 @@
+ <div id="wrapper">
+         <div class="w1">
+            <!--header starts -->
+    			<sly data-sly-include="header.html"/>
+            <!--header ends -->
+            <div id="main">
+               <div class="main-holder">
+                  <div id="content" ng-show="ShowCarousel" sonar="" zone="CARSL" location="HP" class="">
+                     <!--gallerystarts -->
+    					<sly data-sly-include="gallery.html"/>
+                     <!--gallery ends -->
+                  </div>
+                  <div id="sidebar">
+                     <!--promo box starts -->
+    					<sly data-sly-include="promobox.html"/>
+                     <!--promo box ends -->
+                     <!--Featured box starts -->
+    					<sly data-sly-include="featuredbox.html"/>
+                     <!--Featured box ends -->
+                     <!--info starts -->
+                  </div>
+               </div>
+               <!--info starts -->
+    			<sly data-sly-include="column-info.html"/>
+               <!--info ends -->
+            </div>
+         </div>
+         <!--footer starts -->
+    			<sly data-sly-include="footer.html"/>
+         <!--footer ends -->
+      </div>

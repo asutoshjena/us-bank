@@ -1,0 +1,94 @@
+<div id="header">
+   <!-- ngInclude:  -->
+   <div ng-include="" src="'/htm/themes/RPS/AAA/header.htm'" class="ng-scope">
+      <div class="header-holder ng-scope">
+         <h1 class="logo"><a href="/" class="ng-binding">AAA Dollars</a></h1>
+         <!-- ngInclude: '/htm/header-userbox.htm' -->
+         <div ng-include="'/htm/header-userbox.htm'" class="ng-scope">
+            <div class="header-box ng-scope">
+               <div class="row">
+                  <ul class="top-nav">
+                     <li class="item-1" ng-class="{active : ActiveMenu == 'account'}">
+                        <a ng-click="SetActiveMenu('account')">
+                        <span class="item-holder">
+                        <span class="item-frame">
+                        Account Details
+                        </span>
+                        </span>
+                        </a>
+                        <div class="drop">
+                           <div class="drop-t">
+                              <div class="t-l"></div>
+                           </div>
+                           <div class="holder">
+                              <div class="frame">
+                                 <div class="list-holder">
+                                    <ul>
+                                       <li><a ng-href="/home/Banking?GoTo=profile" href="/home/Banking?GoTo=profile">My Profile</a></li>
+                                       <li><a ng-href="/home/Banking?GoTo=history" href="/home/Banking?GoTo=history">Order History</a></li>
+                                       <li ng-show="Profile.AllowRewardsEmailAlertInd == 'Y'" class="ng-hide"><a ng-href="/home/Banking?GoTo=alerts" href="#">Reward Alerts</a></li>
+                                       <li ng-show="Profile.ProgramCode == 'CPS' || Profile.ProgramCode == 'EIP' " class="ng-hide"><a ng-href="/home/Banking?GoTo=profile" href="#">Change Email Address</a></li>
+                                       <li ng-show="Profile.ProgramCode == 'CPS' || Profile.ProgramCode == 'EIP' " class="ng-hide"><a ng-href="/home/Banking?GoTo=security" href="#">Security Settings</a></li>
+                                       <li ng-show="Profile.ProductCode.indexOf('EDJ') > -1" class="ng-hide"><a ng-href="/home/LoyaltyInvest" href="#">Loyalty Invest</a></li>
+                                       <li ng-show="Profile.ProgramCode == 'CPS' || Profile.ProgramCode == 'EIP' " class="ng-hide"><a ng-href="/Login/logout" href="#">Logout</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="drop-b">
+                              <div class="b-l"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <!-- -->
+                     <li class="item-3" ng-hide="Profile.ProductCode == 'ELANCSHMCV'||Profile.ProductCode == 'ELANCASHAX'" ng-class="{active : ActiveMenu == 'wishlist'}" style="width: 92px;">
+                        <a ng-click="SetActiveMenu('wishlist')">
+                        <span class="item-holder">
+                        <span class="item-frame" style="margin-left: 4px;">
+                        <strong>Wish List</strong> <span class="cart-indicator ng-binding">(0)</span>
+                        </span>
+                        </span>
+                        </a>
+                        <div class="drop">
+                           <div class="drop-t">
+                              <div class="t-l"></div>
+                           </div>
+                           <div class="holder">
+                              <div class="frame">
+                                 <div class="cart-box">
+                                    <strong class="heading">Wish List Preview</strong>
+                                    <ul class="cart-list">
+                                       <!-- ngRepeat: items in WishList.WishListPreview -->
+                                    </ul>
+                                    <a ng-href="/home/WishList" class="btn" href="#"><span>View Full Wish List</span></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="drop-b">
+                              <div class="b-l"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <!-- -->
+                  </ul>
+                  <span ng-show="Profile" class="user-box">Hello <strong class="ng-binding">AAA DOLLAR-PLUS</strong></span>
+               </div>
+               <div class="row" ng-hide="Profile.LogoThemeCode == 'RPS-EDJ' || Profile.LogoThemeCode == 'RPS-ELAN' || Profile.LogoThemeCode == 'EIP-ELAN' || Profile.LogoThemeCode == 'RPS-FID'" style="float: right;font-size: 24px;color: #001067;">
+                  <span ng-hide="Profile.RewardGroupID == 'ALT'" class="">Rewards Center</span>
+               </div>
+            </div>
+         </div>
+         <br>
+      </div>
+      <div class="nav-box ng-scope">
+         <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a ng-href="/home/Catalog" target="_self" href="#">Browse Rewards</a></li>
+            <li><a href="#" class="ng-binding">Manage AAA Dollars</a></li>
+            <li><a ng-href="" ng-click="GoToRTRSSO()" ng-show="Profile.Indicators.OffersEligibleInd" target="_self" class="ng-hide">Offers</a></li>
+            <li><a ng-href="/Login/SSOLogout" href="#">Back to Account</a></li>
+         </ul>
+         <span ng-show="Profile" class="text-holder ng-binding">You have 12,998,909.00 AAA Dollars</span>
+      </div>
+   </div>
+</div>

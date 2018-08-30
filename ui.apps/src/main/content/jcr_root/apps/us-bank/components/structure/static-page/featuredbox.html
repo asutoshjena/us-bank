@@ -1,0 +1,46 @@
+<div ng-controller="FeaturedBoxController" class="ng-scope">
+   <div class="featured-box" ng-show="ProfileChecked &amp;&amp; ShowFeaturedItem">
+      <div class="holder">
+         <div class="frame">
+            <strong class="heading ng-binding">Featured Items</strong>
+            <ul class="featured-list">
+               <!-- ngRepeat: featureditems in FeaturedItemList | limitTo:3 track by $index -->
+               <li ng-repeat="featureditems in FeaturedItemList | limitTo:3 track by $index" class="ng-scope">
+                  <div class="img-holder">
+                     <span class="mask"></span>
+                     <img ng-src="/content/dam/us-bank/81323medium.jpeg" width="48" height="48" fallback-images="" imagesize="small" src="/content/dam/us-bank/81323medium.jpeg">
+                  </div>
+                  <div class="text-holder">
+                     <strong class="sub-heading"><span><a ng-href="home/Catalog?RewardsID=145890" ng-bind-html="featureditems.Title |to_trusted" class="ng-binding" href="#">Soleus GO! Activity and Sleep Tracker, BLACK</a></span></strong>
+                     <p class="ng-binding">149.00 AAA Dollars</p>
+                  </div>
+               </li>
+               <!-- end ngRepeat: featureditems in FeaturedItemList | limitTo:3 track by $index -->
+               <li ng-repeat="featureditems in FeaturedItemList | limitTo:3 track by $index" class="ng-scope">
+                  <div class="img-holder">
+                     <span class="mask"></span>
+                     <img ng-src="/content/dam/us-bank/RO-2025medium.jpeg" width="48" height="48" fallback-images="" imagesize="small" src="/content/dam/us-bank/RO-2025medium.jpeg">
+                  </div>
+                  <div class="text-holder">
+                     <strong class="sub-heading"><span><a ng-href="home/Catalog?RewardsID=276335" ng-bind-html="featureditems.Title |to_trusted" class="ng-binding" href="#">Garmin - vivoactive HR Smartwatch - Black</a></span></strong>
+                     <p class="ng-binding">269.00 AAA Dollars</p>
+                  </div>
+               </li>
+               <!-- end ngRepeat: featureditems in FeaturedItemList | limitTo:3 track by $index -->
+               <li ng-repeat="featureditems in FeaturedItemList | limitTo:3 track by $index" class="ng-scope">
+                  <div class="img-holder">
+                     <span class="mask"></span>
+                     <img ng-src="/content/dam/us-bank/41417medium.jpeg" width="48" height="48" fallback-images="" imagesize="small" src="/content/dam/us-bank/41417medium.jpeg">
+                  </div>
+                  <div class="text-holder">
+                     <strong class="sub-heading"><span><a ng-href="home/Catalog?RewardsID=144471" ng-bind-html="featureditems.Title |to_trusted" class="ng-binding" href="#">Garmin Vivoactive GPS Smartwatch, BLACK</a></span></strong>
+                     <p class="ng-binding">248.00 AAA Dollars</p>
+                  </div>
+               </li>
+               <!-- end ngRepeat: featureditems in FeaturedItemList | limitTo:3 track by $index -->
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div sonar="" class="featured-box ng-hide" ng-hide="ShowFeaturedItem" zone="HPFC" location="HP"></div>
+</div>

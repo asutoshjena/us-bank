@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2018-08-29T15:48:22.815+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2018-08-29T15:48:25.732+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/us-bank/settings/wcm/template-types/content-page"
+        jcr:description="Static Page Template for US Bank"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Static Page Template"
+        status="enabled"/>
+</jcr:root>
