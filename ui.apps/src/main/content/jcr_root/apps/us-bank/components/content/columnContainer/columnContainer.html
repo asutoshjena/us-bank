@@ -1,0 +1,11 @@
+<h3 data-sly-test.mode="${wcmmode.edit || wcmmode.design}">Configure Column Container Component</h3>
+<sly data-sly-list="${properties.columnDesktop}">
+	<sly data-sly-test.control="control${itemList.index}"></sly>
+	<div class="col-lg-${item}">
+		<sly data-sly-resource="${@path=control, resourceType='wcm/foundation/components/parsys'}"></sly>
+	</div>
+</sly>
+
+<sly data-sly-test.author="${(wcmmode.edit || wcmmode.design)}">
+    <div class="clearfix"></div>
+</sly>

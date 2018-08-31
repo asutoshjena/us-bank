@@ -1,0 +1,8 @@
+<!--/*
+   Promo Box Component.
+*/-->
+<h3 data-sly-test.mode="${!properties.fileReference && (wcmmode.edit || wcmmode.design)}">Configure  Promo Box Component.</h3>
+
+<div sonar="" class="promo-box${!wcmmode.disabled ? ' cq-dd-image' : ''}" zone="HP1" location="HP" ng-show="ShowHP1" style="padding: 9px 0px;">
+<p><a href="${properties.linkTo @ extension = 'html'}"><img border="0" alt="${properties.alt}" src="${properties.fileReference}"></a></p>
+</div>
