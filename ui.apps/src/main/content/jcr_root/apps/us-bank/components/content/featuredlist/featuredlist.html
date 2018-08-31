@@ -1,0 +1,19 @@
+<h3 data-sly-test="${!properties.count && (wcmmode.edit || wcmmode.design)}">Configure Featured List Component</h3>
+<sly data-sly-use.componentContainer="com.usbank.cms.core.models.ContainerModel"/>
+<div data-sly-test="${properties.count}" class="ng-scope">
+   <div class="featured-box">
+      <div class="holder">
+         <div class="frame">
+            <strong class="heading ng-binding">${properties.heading}</strong>
+            <ul class="featured-list" data-sly-list="${componentContainer.componentList}">
+	<sly data-sly-test.cid="featureitem${itemList.index}"></sly>
+	<li data-sly-resource="${@path=cid, resourceType='us-bank/components/content/featureitem'}"></li>
+
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+   <div class="clearfix"></div>
+</sly>

@@ -1,0 +1,12 @@
+<!--/*
+   Featured Item Component.
+*/-->
+<h3 data-sly-test.mode="${!properties.fileReference && (wcmmode.edit || wcmmode.design)}">Configure  Featured Item Component.</h3>
+
+<div class="img-holder${!wcmmode.disabled ? ' cq-dd-image' : ''}">
+	<span class="mask"></span>
+	<img alt="${properties.alt}" width="48" height="48" fallback-images="" imagesize="small" src="${properties.fileReference}">
+</div>
+<div class="text-holder">
+   ${properties.text @context='html'}
+</div>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Column Container"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columnDesktop
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        fieldDescription="No of columns and sectioned out of 100%"
+                        fieldLabel="Column Layout">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="no of column"
+                            name="./columnDesktop">
+                            <items jcr:primaryType="nt:unstructured">
+                                <twentyFive
+                                    jcr:primaryType="nt:unstructured"
+                                    text="25%"
+                                    value="3"/>
+                                <thirtyThree
+                                    jcr:primaryType="nt:unstructured"
+                                    text="33%"
+                                    value="4"/>
+                                <fourty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="40%"
+                                    value="5"/>
+                                <fifty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="50%"
+                                    value="6"/>
+                                <sixtySix
+                                    jcr:primaryType="nt:unstructured"
+                                    text="66%"
+                                    value="8"/>
+                                <seventyFive
+                                    jcr:primaryType="nt:unstructured"
+                                    text="75%"
+                                    value="9"/>
+                                <hundred
+                                    jcr:primaryType="nt:unstructured"
+                                    text="100%"
+                                    value="12"/>
+                            </items>
+                        </field>
+                    </columnDesktop>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
