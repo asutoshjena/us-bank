@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Image Tile"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <imagepath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Configure Image"
+                                        fieldLabel="Image"
+                                        name="./imagePath"
+                                        required="{Boolean}true"
+                                        rootPath="/content/dam"/>
+                                    <imagealttext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Configure Image Alt Text"
+                                        fieldLabel="Image Alt Text"
+                                        name="./imageAltText"
+                                        required="{Boolean}true"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        fieldDescription="Configure Title"
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}true"/>
+                                    <description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        fieldDescription="Configure Description"
+                                        fieldLabel="Description"
+                                        name="./description"
+                                        required="{Boolean}true"/>
+                                    <ctatext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Configure CTA Text"
+                                        fieldLabel="CTA Text"
+                                        name="./ctaText"
+                                        required="{Boolean}true"/>
+                                    <ctaurl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Configure CTA URL"
+                                        fieldLabel="CTA URL"
+                                        name="./ctaUrl"
+                                        required="{Boolean}true"
+                                        rootPath="/content"/>
+                                    <newwindow
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        deleteHint="{Boolean}true"
+                                        fieldDescription="If Checked, Link will be opened in new window."
+                                        name="./newWindow"
+                                        text="Open in New Window?"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </tab1>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
