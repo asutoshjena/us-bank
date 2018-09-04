@@ -1227,7 +1227,7 @@ h3 {
     font-size: 14px;
     line-height: 16px;
     padding: 0 9px 0 0;
-    background: url(/images/btns.png) no-repeat 100% -780px;
+    background: url("../resources/images/btns.png") no-repeat 100% -780px;
     cursor: pointer;
     margin: 0 0 -6px
 }
@@ -1253,7 +1253,7 @@ h3 {
     display: block;
     height: 34px;
     text-align: center;
-    background: url(/images/btns.png) no-repeat 0 -820px;
+    background: url("../resources/images/btns.png") no-repeat 0 -820px;
     padding: 0 10px 0 9px;
     min-width: 108px
 }

@@ -13,6 +13,8 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<div data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"></div>
+
 <div id="wrapper">
     <div class="w1">
         <sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
@@ -22,4 +24,16 @@
     <div id="footer">
         <sly data-sly-resource="${@path='footer', resourceType='us-bank/components/structure/footer'}"/>
     </div>
+</div>
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable content-popup-dialog" tabindex="-1" role="dialog" style="position: absolute; height: auto; width: 780px; top: 300.6px; left: 366px; display: none; z-index: 100;" aria-describedby="ContactUsPopUp" aria-labelledby="ui-id-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle" style="display: none;"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div>
+   <div style="width: auto; padding: 15px; z-index: 2051; min-height: 113px; max-height: none; height: auto;" id="ContactUsPopUp" class="ui-dialog-content ui-widget-content">
+      <div class="text-box" id="dialogPopupContent">
+         <!-- Popup content goes here -->
+      </div>
+      <div class="" style="width: 750px; padding: 15px 0px;">
+         <a onclick="fnclosepopup()" class="btn-blue ng-scope" style="outline: 0; float: right; color: #FFFFFF"><span style="padding: 0 5px 0 7px; min-width: 30px;"><em class="ng-binding" style="background: none;">Close</em></span></a>
+      </div>
+   </div>
 </div>

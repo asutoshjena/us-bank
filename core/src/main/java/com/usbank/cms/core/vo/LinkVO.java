@@ -4,6 +4,7 @@ public class LinkVO {
     private String linkName;
     private String linkUrl;
     private String linkNewWindow;
+	private String path;
 
     public String getLinkName() {
         return linkName;
@@ -28,4 +29,12 @@ public class LinkVO {
     public void setLinkNewWindow(String linkNewWindow) {
         this.linkNewWindow = linkNewWindow;
     }
+    public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
 }

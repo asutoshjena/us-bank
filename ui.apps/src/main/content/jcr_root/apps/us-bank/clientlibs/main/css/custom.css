@@ -26,3 +26,248 @@
 	width:25%;
     float:left;
 }
+.columns-info {
+    clear: both;
+}
+
+.slideItem.slideItem1 {
+    width: 205px;
+    height: 207.01px;
+    top: 0px;
+    right: 166px;
+    opacity: 1;
+    z-index: 9;
+    display: block;
+}
+.slideItem.slideItem1 img {
+    width: 205px;
+    height: 163px;
+    display: inline-block;
+}
+.slideItem.slideItem1 .reflection.rf1 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 130.4px;
+    width: 100%;
+    height: 35.208px;
+}
+
+.slideItem.slideItem1 .reflection.rf2 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 163px;
+    width: 100%;
+    height: 44.01px;
+}
+
+.slideItem.slideItem1 .reflection.rf1 #reflectImage {
+    width: 164px;
+    height: 130.4px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+    display: inline-block;
+}
+
+.slideItem.slideItem1 .reflection.rf2 #reflectImage {
+    width: 205px;
+    height: 163px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+}
+
+
+.slideItem.slideItem2 {
+    width: 164px;
+    height: 165.608px;
+    top: 31.948px;
+    right: 6.92px;
+    opacity: 1;
+    z-index: 8;
+}
+
+.slideItem.slideItem2 img {
+    width: 131.2px;
+    height: 104.32px;
+    display: inline-block;
+}
+
+.slideItem.slideItem2 .reflection.rf1 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 104.32px;
+    width: 100%;
+    height: 28.1664px;
+}
+
+
+.slideItem.slideItem2 .reflection.rf2 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 130.4px;
+    width: 100%;
+    height: 35.208px;
+}
+
+
+
+.slideItem.slideItem2 .reflection.rf1 #reflectImage {
+    width: 104.96px;
+    height: 83.456px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+    display: inline-block;
+}
+
+.slideItem.slideItem2 .reflection.rf2 #reflectImage {
+    width: 164px;
+    height: 130.4px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+}
+
+.slideItem.slideItem3 {
+    width: 131.2px;
+    height: 132.486px;
+    top: 57.5064px;
+    right: -120.344px;
+    opacity: 0;
+    z-index: 7;
+    display: none;
+}
+
+.slideItem.slideItem3 img {
+    width: 83.968px;
+    height: 66.7648px;
+    display: inline-block;
+}
+.slideItem.slideItem3 .reflection.rf1 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 83.456px;
+    width: 100%;
+    height: 22.5331px;
+}
+
+.slideItem.slideItem3 .reflection.rf2 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 104.32px;
+    width: 100%;
+    height: 28.1664px;
+}
+
+
+
+.slideItem.slideItem3 .reflection.rf1 #reflectImage {
+    width: 67.1744px;
+    height: 53.4118px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+    display: inline-block;
+}
+
+.slideItem.slideItem3 .reflection.rf2 #reflectImage {
+    width: 131.2px;
+    height: 104.32px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+}
+
+.slideItem.slideItem4 {
+    width: 104.96px;
+    height: 105.989px;
+    top: 77.9531px;
+    right: -222.155px;
+    opacity: 0;
+    z-index: 6;
+    display: none;
+}
+
+.slideItem.slideItem4 img {
+    width: 83.968px;
+    height: 66.7648px;
+    display: inline-block;
+}
+
+.slideItem.slideItem4 .reflection.rf1 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 66.7648px;
+    width: 100%;
+    height: 18.0265px;
+}
+
+
+.slideItem.slideItem4 .reflection.rf2 {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    left: 0px;
+    top: 83.456px;
+    width: 100%;
+    height: 22.5331px;
+}
+
+.slideItem.slideItem4 .reflection.rf1 #reflectImage {
+    display: inline-block;
+}
+
+
+.slideItem.slideItem4 #reflectImage {
+    width: 104.96px;
+    height: 83.456px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transform: rotate(180deg) scale(-1, 1);
+}
+
