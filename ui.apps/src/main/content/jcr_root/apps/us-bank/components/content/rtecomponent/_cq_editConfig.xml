@@ -75,8 +75,8 @@
                     <styles jcr:primaryType="cq:WidgetCollection">
                         <darkbluetext
                             jcr:primaryType="nt:unstructured"
-                            cssName="sub-heading"
-                            text="sub Heading"/>
+                            cssName="heading"
+                            text="Heading"/>
                     </styles>
                 </styles>
                 <spellcheck

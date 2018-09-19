@@ -1,3 +1,10 @@
+
+#footer .intro{
+  clear: none;
+}
+#footer .intro p{
+   margin-bottom: 15px;
+}
 .col-lg-12{
 	width:100%;
     float:left;

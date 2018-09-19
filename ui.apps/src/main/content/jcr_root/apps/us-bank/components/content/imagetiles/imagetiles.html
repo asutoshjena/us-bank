@@ -1,14 +1,13 @@
 <p data-sly-test=${wcmmode.edit}>Configure Image Tiles</p>
 <div class="column" data-sly-use.imageModel="com.usbank.cms.core.models.ImageTilesModel" data-sly-test="${imageModel}">
-    <div class="img-holder">
+    <div class="img-holder${!wcmmode.disabled ? ' cq-dd-image' : ''}">
         <a href="${imageModel.ctaUrl}" target="${imageModel.newWindow}">
             <span class="mask"></span>
-            <img alt="${properties.imageAltText}" src="${properties.imagePath}" width="68" height="68">
+            <img alt="${properties.imageAltText}" src="${properties.fileReference}" width="68" height="68">
         </a>
     </div>
     <div class="text-holder">
-        <strong class="heading">${properties.title @context='html'}</strong>
-        <p>${properties.description @context='html'}</p>
+        ${properties.text @context='html'}
         <a class="btn-more" href="${imageModel.ctaUrl}" target="${imageModel.newWindow}">${properties.ctaText}</a>
     </div>
 </div>
