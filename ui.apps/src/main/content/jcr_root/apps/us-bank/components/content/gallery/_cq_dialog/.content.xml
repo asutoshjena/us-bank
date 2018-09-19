@@ -34,13 +34,13 @@
                                     <items jcr:primaryType="nt:unstructured">
                                         <image
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
                                             fieldLabel="Image"
                                             name="./image"
                                             rootPath="/content/dam/us-bank"/>
                                         <thumbnail
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
                                             fieldLabel="Thumbnail"
                                             name="./thumbnail"
                                             rootPath="/content/dam/us-bank"/>
@@ -51,7 +51,7 @@
                                             name="./alt"/>
                                         <linkTo
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
                                             fieldLabel="Link"
                                             name="./linkUrl"
                                             rootPath="/content/us-bank"

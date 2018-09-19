@@ -13,11 +13,4 @@
                 type="text"/>
         </cq:childEditors>
     </cq:inplaceEditing>
-    <cq:listeners
-        jcr:primaryType="cq:EditListenersConfig"
-        aftercopy="REFRESH_PAGE"
-        afterdelete="REFRESH_PAGE"
-        afteredit="REFRESH_PAGE"
-        afterinsert="REFRESH_PAGE"
-        aftermove="REFRESH_PAGE"/>
 </jcr:root>
