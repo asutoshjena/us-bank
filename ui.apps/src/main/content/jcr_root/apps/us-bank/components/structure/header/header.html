@@ -81,3 +81,13 @@
     </div>
     <br>
 </div>
+<div class="nav-box ng-scope">
+    <ul id="nav">
+       <li><a href="#">Home</a></li>
+       <li><a ng-href="/home/Catalog" target="_self" href="#">Browse Rewards</a></li>
+       <li><a href="#" class="ng-binding">Manage AAA Dollars</a></li>
+       <li><a ng-href="" ng-click="GoToRTRSSO()" ng-show="Profile.Indicators.OffersEligibleInd" target="_self" class="ng-hide">Offers</a></li>
+       <li><a ng-href="/Login/SSOLogout" href="#">Back to Account</a></li>
+    </ul>
+    <span ng-show="Profile" class="text-holder ng-binding">You have 12,998,909.00 AAA Dollars</span>
+ </div>
