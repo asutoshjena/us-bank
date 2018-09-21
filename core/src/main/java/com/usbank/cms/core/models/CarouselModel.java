@@ -50,10 +50,10 @@ public class CarouselModel {
     @PostConstruct
     protected void init() {
         log.info("CarouselModel :: init :: Start");
-        if (ArrayUtils.isNotEmpty(carouselData)) {
-            carouselList = new ArrayList<>();
-            for (String data : carouselData) {
-                CarouselImageVO carouselVo = (CarouselImageVO) CommonUtil.getObjectFromJson(data, new CarouselImageVO());
+        carouselList = new ArrayList<>();
+        if (ArrayUtils.isNotEmpty(carouselData)) {            
+            for (final String data : carouselData) {
+                final CarouselImageVO carouselVo = (CarouselImageVO) CommonUtil.getObjectFromJson(data, new CarouselImageVO());
                 carouselVo.setLinkUrl(LinksUtil.checkInternalURLByPath(carouselVo.getLinkUrl(), resourceResolver));
                 carouselList.add(carouselVo);
             }
